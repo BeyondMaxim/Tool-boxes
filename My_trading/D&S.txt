@@ -1,0 +1,119 @@
+-----Job description-----------
+Development of a Professional Trading Tool for Mexc Futures
+
+
+We are seeking a skilled freelancer to develop an alternative solution to our current trading tool. Our existing setup involves a Windows VPS running simple macros to execute buy and sell orders for futures on the Mexc exchange, based on signals received from a TradingView webhook strategy. This current system, while functional, lacks professionalism and is prone to errors and delays.
+
+Objectives:
+
+- Improve Reliability and Efficiency: The new solution must significantly reduce the risk of errors and minimize the delay between signal receipt and order execution. Speed and reliability are our top priorities.
+
+- Enhance Functionality: The tool should support simultaneous trading of multiple coins, expanding our trading capabilities beyond the current limitations.
+
+- Implement Logging and Reporting: It must include a logging feature that collects all order data. Additionally, this data should be automatically shared to a Discord or Telegram channel to ensure transparency and real-time monitoring of trading activities.
+
+- Revenue Calculation: Another crucial feature is the automatic calculation of total revenue generated daily, weekly, and monthly. This will help in assessing the tool's performance over different time frames.
+
+Challenges:
+- Mexc does not offer an API for futures trading, necessitating a creative approach to interact with the exchange's system efficiently and reliably.
+- Ensuring minimal latency in signal processing and order execution to maximize trading opportunities.
+
+Requirements:
+- Experience in developing trading tools or bots, especially those that interface with exchanges through unconventional methods (e.g., without direct API support for specific functionalities).
+- Strong programming skills, with proficiency in creating efficient, low-latency systems.
+- Familiarity with integrating webhooks and automating interactions with websites.
+- Ability to implement comprehensive logging and reporting features, including integration with Discord or Telegram for real-time updates.
+- Proven track record of developing secure, reliable software solutions.
+
+Project Deliverables:
+- A fully functional trading tool that meets the described objectives and requirements.
+- Documentation detailing the tool's setup, operation, and any maintenance requirements.
+- Source code for the tool, with appropriate comments for maintainability.
+
+Interested candidates should provide a portfolio of similar projects they have worked on, including any relevant experiences with trading systems, bots, or automation tools that operate in a limited API environment. Please also include a brief proposal outlining your approach to developing the solution, including any technologies or strategies you plan to employ to overcome the challenges described.
+
+This project offers an opportunity to work on a unique challenge at the intersection of finance and technology. We look forward to your innovative solutions to enhance our trading operations on the Mexc exchange.
+
+---------Job Bidding------------
+Dear Hiring Manager,
+I hope you are doing great.
+
+With a focus on reliability, efficiency, enhanced functionality, and comprehensive reporting, I am confident in my ability to deliver a robust and innovative tool that meets your requirements.
+
+Here is my approach
+
+Automation tools and robust trading strategies
+- Web Scraping: Use web scraping libraries like BeautifulSoup or Selenium to extract data from Mexc's website.
+- Automation: Employ automation tools like Puppeteer or AutoIt to automate user interactions on the Mexc platform.
+- Data Parsing: Parse the scraped data to extract relevant information for trading decisions.
+- Order Execution: Develop logic to generate and execute buy/sell orders based on predefined strategies.
+
+Improving Reliability and Efficiency:
+- Implement a streamlined order execution system that minimizes errors and reduces latency between signal receipt and trade execution.
+- Utilize efficient algorithms and optimized processes to enhance speed and reliability in trading operations.
+
+Enhancing Functionality:
+- Develop a flexible trading tool capable of handling simultaneous trading of multiple coins to expand trading capabilities.
+- Design a modular architecture that allows for easy scalability and customization based on evolving trading needs.
+
+Implementing Logging and Reporting:
+- Integrate a logging feature to capture all order data for transparency and audit purposes.
+- Automate data sharing to Discord or Telegram channels for real-time monitoring of trading activities.
+
+Revenue Calculation:
+- Incorporate automatic revenue calculation functionality to provide insights into daily, weekly, and monthly performance.
+
+I am confident that I can finish your job successfully within your deadline.
+
+I will provide perfect result on your project.
+Let's get started contract asap.
+
+Thank you for considering my application.
+
+Warm regards,
+
+Anton
+-------------
+Solutions:
+
+Question1 : 
+please explain about  Windows VPS running simple macros to execute buy and sell orders for futures on the Mexc exchange, based on signals received from a TradingView webhook strategy in details..
+
+Answer:
+To set up a Windows VPS to run simple macros for executing buy and sell orders for futures on the Mexc exchange based on signals from a TradingView webhook strategy, you can follow these detailed steps:
+
+1. Windows VPS Setup:
+   - Ensure you have a compatible Windows VPS, such as Windows 10 or 11, Windows Server 2016, 2019, or 2022[5].
+   - Download and install the necessary software for running macros and executing trades on the Mexc exchange.
+
+2. TradingView Webhook Strategy:
+   - Create a TradingView webhook strategy that generates signals for buy and sell orders based on your trading criteria.
+   - Set up the webhook alerts in TradingView to trigger when specific conditions are met[4].
+
+3. Macro Creation:
+   - Develop simple macros using tools like AutoHotkey or other automation software to interact with the Mexc exchange platform.
+   - Write scripts that can receive signals from the TradingView webhook and execute corresponding buy or sell orders on the Mexc exchange.
+
+4. Integration:
+   - Integrate the TradingView webhook alerts with your macro scripts running on the Windows VPS.
+   - Ensure that the macros are programmed to interpret the signals correctly and execute trades accurately based on the received alerts.
+
+5. Testing and Monitoring:
+   - Test the entire setup thoroughly in a simulated environment to ensure that buy and sell orders are executed correctly.
+   - Monitor the performance of your macros and adjust them as needed to optimize their efficiency and accuracy.
+
+By following these steps, you can create a system where your Windows VPS runs macros to execute buy and sell orders for futures on the Mexc exchange based on signals received from your TradingView webhook strategy.
+
+Citations:
+[1] https://algoji.com/vps4trading/
+[2] https://www.reddit.com/r/TradingView/comments/sawuog/add_buy_vps_to_speed_up_webhook_alerts/
+[3] https://www.tradingview.com/script/TCsd7tB4-Strategy-Alert-Webhook-Demo-Buy-One-Sell-One/
+[4] https://tradingonramp.com/mastering-tradingview-webhooks-for-efficient-trading-automation/
+[5] https://docs.pineconnector.com/getting-started
+---
+Querstion 2:
+what is a tradingview webhook strategy and how does it work
+
+Answer:
+
+
