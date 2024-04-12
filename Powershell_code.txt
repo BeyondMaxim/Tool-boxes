@@ -1,0 +1,50 @@
+# Load the Excel COM object
+$excel = New-Object -ComObject Excel.Application
+
+# Open the source Excel file 
+$workbook = $excel.Workbooks.Open("E:\My_work\excel macro3.1\REPORT.xlsx")
+$worksheet = $workbook.Worksheets.Item(1)
+
+# Get the total number of rows in the worksheet
+$rowCount = $worksheet.UsedRange.Rows.Count
+
+# Define segment size and number of segments
+$segmentSize = 3000
+$segments = [math]::Ceiling(($rowCount - 19) / $segmentSize)
+
+# Loop through segments and save each segment to a new file
+for ($i = 1; $i -le $segments; $i++) {
+    $newWorkbook = $excel.Workbooks.Add()
+    $newWorksheet = $newWorkbook.Worksheets.Item(1)
+    
+    # Copy header (first 15 rows)
+    $worksheet.Rows("1:15").Copy()
+    $newWorksheet.Paste($newWorksheet.Cells(1, 1))
+    
+    # Copy data (3000 rows per segment)
+    $startRow = ($i - 1) * $segmentSize + 16
+    $endRow = [math]::Min($startRow + $segmentSize - 1, $rowCount-4)
+    $worksheet.Rows($startRow.ToString() + ":" + $endRow.ToString()).Copy()
+    $newWorksheet.Paste($newWorksheet.Cells(16, 1))
+    
+    # Copy footer (last 4 rows)
+    $worksheet.Rows(($rowCount - 3).ToString() + ":" + $rowCount.ToString()).Copy()
+    $newWorksheet.Paste($newWorksheet.Cells($segmentSize + 16, 1))
+    
+    # Save the new workbook
+    $newWorkbook.SaveAs("E:\My_work\excel macro3.1\Segment_$i.xlsx")
+    
+    # Close the new workbook
+    $newWorkbook.Close()
+}
+
+# Close and quit Excel application
+$workbook.Close()
+$excel.Quit()
+
+# Clean up COM objects
+[System.Runtime.Interopservices.Marshal]::ReleaseComObject($worksheet) | Out-Null
+[System.Runtime.Interopservices.Marshal]::ReleaseComObject($workbook) | Out-Null
+[System.Runtime.Interopservices.Marshal]::ReleaseComObject($excel) | Out-Null
+[System.GC]::Collect()
+[System.GC]::WaitForPendingFinalizers()
